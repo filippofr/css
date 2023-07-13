@@ -1,0 +1,105 @@
+:root{
+  /* primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* paragraphs */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+  /* background, headings, buttons */
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: 900px;
+  height: 650px;
+  padding-top: 150px;
+  color: var(--very-light-gray);
+  margin: auto;
+}
+.title{
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 40px;
+  padding-top: 30px;
+}
+.desc{
+  padding-top: 20px;
+  color: var(--transparent-white);
+}
+.sedans-container{
+  background-color: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+  padding: 40px;
+}
+.suvs-container{
+  background-color: var(--dark-cyan);
+  padding: 40px;
+}
+.luxury-container{
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+  padding: 40px;
+}
+.button{
+  background-color: var(--very-light-gray);
+  border-radius: 25px;
+  width: 135px;
+  padding: 10px;
+  font-size: 14px;
+}
+.pad{
+  padding-top: 90px;
+}
+
+.button.orange{
+  color: var(--bright-orange);
+  border: 2px solid var(--bright-orange);
+}
+.button.dark-cyan{
+  color: var(--dark-cyan);
+  border: 2px solid var(--dark-cyan);
+}
+.button.very-dark-cyan{
+  color: var(--very-dark-cyan);
+  border: 2px solid var(--very-dark-cyan);
+}
+.button:hover{
+  color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33% 33% 33%;
+    padding-top: 30px;
+    color: var(--very-light-gray);
+    width: 350px;
+    height: 1200px;
+  }
+  .sedans-container{
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+    padding: 35px;
+  }
+  .suvs-container{
+    background-color: var(--dark-cyan);
+    padding: 35px;
+  }
+  .luxury-container{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+    padding: 35px;
+  }
+  .pad{
+    padding-top: 20px;
+  }
+}
