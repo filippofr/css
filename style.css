@@ -1,0 +1,54 @@
+/* menu */
+.nav-item{
+  padding: 20px;
+}
+.nav{
+  width: auto;
+  margin-right: 0;
+  margin-left: auto;
+}
+img.logo{
+  height: 50px;
+  align-self: center;
+}
+.menu{
+  display: inline-flex;
+  margin: 0;
+  width: 100%;
+}
+.container-fluid{
+  padding: 55px;
+  margin: 0;
+  width: auto;
+}
+
+/* prima sezione */
+.first-section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "text" "image";
+}
+.first-section .text{
+  grid-area: "text";
+}
+.first-section .text .email-section{
+  display: inline-flex;
+  height: 40px;
+  
+}
+.form-control{
+  border-radius: 3px;
+  padding: 10px 15px 10px 15px;
+  width: 300px;
+}
+.btn{
+  margin-left: 15px;
+  border-radius: 3px;
+  width: 150px;
+}
+.first-section .image{
+  grid-area: "image";
+  background-image: url(./images/illustration-1.svg);
+  background-size: cover;
+  height: 100%;
+}
