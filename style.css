@@ -1,3 +1,15 @@
+:root{
+  /* primary */
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  /* accent */
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  /* neutral */
+  --light-grayish-blue: hsl(250, 60%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+}
+
 /* menu */
 .nav-item{
   padding: 20px;
@@ -51,4 +63,26 @@ img.logo{
   background-image: url(./images/illustration-1.svg);
   background-size: cover;
   height: 100%;
+}
+
+/* seconda sezione */
+.second-half{
+  background-color: var(--light-grayish-blue);
+}
+.second-section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "text" "image";
+}
+.second-section .text{
+  grid-area: "text";
+}
+.second-section .image{
+  grid-area: "image";
+  background-image: url(./images/illustration-2.svg);
+  background-size: cover;
+  height: 100%;
+}
+.contact{
+  display: inline-flex;
 }
