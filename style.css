@@ -66,7 +66,7 @@ img.logo{
 }
 
 /* seconda sezione */
-.second-half{
+.second{
   background-color: var(--light-grayish-blue);
 }
 .second-section{
@@ -86,3 +86,8 @@ img.logo{
 .contact{
   display: inline-flex;
 }
+.contact-info{
+  display: block;
+}
+
+/* terza sezione */
