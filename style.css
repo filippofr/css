@@ -91,3 +91,17 @@ img.logo{
 }
 
 /* terza sezione */
+.third{
+  background-color: var(--desaturated-blue);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "text" "email-section";
+}
+
+/* quarta sezione */
+.fourth{
+  background-color: var(--very-dark-blue);
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "one" "two" "three" "four";
+}
