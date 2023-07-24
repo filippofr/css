@@ -81,7 +81,7 @@ img.logo{
   border-radius: 3px;
   padding: 10px 15px 10px 15px;
   width: 300px;
-  font-size: 14px;
+  font-size: 12px;
   border-color: var(--light-gray);
   border-width: 2px;
 }
@@ -89,7 +89,7 @@ img.logo{
   margin-left: 15px;
   border-radius: 3px;
   width: 180px;
-  font-size: 14px;
+  font-size: 12px;
   background-color: var(--bright-blue);
   color: white;
 }
@@ -177,16 +177,26 @@ img.logo{
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "text" "email-section";
-  padding-top: 100px;
+  padding-top: 90px;
 }
 .third .text{
-  padding-right: 50px;
+  padding-right: 170px;
+}
+.third .email-section{
+  padding-left: 100px;
 }
 .third .btn{
   margin: 0;
+  height: 40px;
 }
 .third .form-control{
   border-width: 0;
+  margin-bottom: 15px;
+  width: 500px;
+}
+.third h3{
+  font-size: 36px;
+  margin-bottom: 15px;
 }
 
 /* quarta sezione */
@@ -199,8 +209,9 @@ img.logo{
 }
 .grid-view{
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 35% auto auto auto;
   grid-template-areas: "one" "two" "three" "four";
+  margin-top: 20px;
 }
 .fourth .contact-icon{
   margin-right: 20px;
