@@ -9,6 +9,31 @@
   --light-grayish-blue: hsl(250, 60%, 98%);
   --light-gray: hsl(0, 0%, 75%);
 }
+::placeholder{
+  color: red;
+}
+
+.dark-desc{
+  color: var(--very-dark-blue);
+}
+.bright-desc{
+  color: white;
+}
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 41px;
+
+}
+p{
+  font-size: 16px;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  color: var(--moderate-cyan);
+}
 
 /* menu */
 .nav-item{
@@ -39,9 +64,13 @@ img.logo{
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "text" "image";
+  margin-top: 50px;
 }
 .first-section .text{
   grid-area: "text";
+  padding-top: 100px;
+  padding-right: 30px;
+  padding-bottom: 100px;
 }
 .first-section .text .email-section{
   display: inline-flex;
@@ -52,17 +81,35 @@ img.logo{
   border-radius: 3px;
   padding: 10px 15px 10px 15px;
   width: 300px;
+  font-size: 14px;
+  border-color: var(--light-gray);
+  border-width: 2px;
 }
 .btn{
   margin-left: 15px;
   border-radius: 3px;
-  width: 150px;
+  width: 180px;
+  font-size: 14px;
+  background-color: var(--bright-blue);
+  color: white;
 }
 .first-section .image{
   grid-area: "image";
   background-image: url(./images/illustration-1.svg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 100%;
+}
+.first-section h3{
+  padding-bottom: 12px;
+}
+.first-section p{
+  padding-right: 100px;
+  margin-bottom: 25px;
+}
+
+.curvature{
+  margin-top: 60px;
 }
 
 /* seconda sezione */
@@ -71,23 +118,57 @@ img.logo{
 }
 .second-section{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 750px auto;
   grid-template-areas: "text" "image";
 }
 .second-section .text{
   grid-area: "text";
+  padding-right: 50px;
 }
 .second-section .image{
   grid-area: "image";
   background-image: url(./images/illustration-2.svg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 100%;
+}
+.second .text .text-desc{
+  margin-top: 30px;
+  padding-right: 170px;
 }
 .contact{
   display: inline-flex;
 }
 .contact-info{
   display: block;
+  margin-left: 10px;
+  align-self: center;
+}
+.contact-name{
+  font-size: 12px;
+  margin: 0;
+}
+.contact-desc{
+  font-size: 10px;
+  margin: 0;
+  margin-top: 2px;
+}
+.card{
+  margin-top: 35px;
+  padding: 20px 35px 20px 35px;
+  width: 370px;
+}
+.card-body{
+  padding: 0;
+}
+.card-text{
+  font-size: 14px;
+  margin-top: 8px;
+}
+.avatar{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 
 /* terza sezione */
@@ -96,12 +177,36 @@ img.logo{
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "text" "email-section";
+  padding-top: 100px;
+}
+.third .text{
+  padding-right: 50px;
+}
+.third .btn{
+  margin: 0;
+}
+.third .form-control{
+  border-width: 0;
 }
 
 /* quarta sezione */
 .fourth{
   background-color: var(--very-dark-blue);
+  padding-bottom: 0;
+}
+.fourth .logo{
+  color: white;
+}
+.grid-view{
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-areas: "one" "two" "three" "four";
+}
+.fourth .contact-icon{
+  margin-right: 20px;
+  color: white;
+}
+.social{
+  margin-right: 10px;
+  color: white;
 }
