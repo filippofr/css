@@ -4,7 +4,9 @@
   --desaturated-blue: hsl(238, 22%, 44%);
   /* accent */
   --bright-blue: hsl(224, 93%, 58%);
+  --very-bright-blue: hsl(224, 100%, 72%);
   --moderate-cyan: hsl(170, 45%, 43%);
+  --bright-cyan: hsl(168deg 65% 79%);
   /* neutral */
   --light-grayish-blue: hsl(250, 60%, 98%);
   --light-gray: hsl(0, 0%, 75%);
@@ -33,6 +35,10 @@ body{
 }
 a{
   color: var(--moderate-cyan);
+}
+a:Hover{
+  color: var(--bright-cyan);
+  fill: var(--bright-cyan);
 }
 
 /* menu */
@@ -84,6 +90,7 @@ img.logo{
   font-size: 12px;
   border-color: var(--light-gray);
   border-width: 2px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .btn{
   margin-left: 15px;
@@ -92,6 +99,12 @@ img.logo{
   font-size: 12px;
   background-color: var(--bright-blue);
   color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.btn:hover{
+  background-color: var(--very-bright-blue);
+  color: white;
+  border-width: 0;
 }
 .first-section .image{
   grid-area: "image";
@@ -157,6 +170,7 @@ img.logo{
   margin-top: 35px;
   padding: 20px 35px 20px 35px;
   width: 370px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.097), -2px -2px 10px rgba(0, 0, 0, 0.097);
 }
 .card-body{
   padding: 0;
@@ -169,6 +183,14 @@ img.logo{
   width: 35px;
   height: 35px;
   border-radius: 50%;
+}
+.external-link{
+  width: fit-content;
+  margin-right: auto;
+  display: flex;
+}
+.external-link:hover{
+  fill: var(--bright-cyan);
 }
 
 /* terza sezione */
@@ -219,5 +241,17 @@ img.logo{
 }
 .social{
   margin-right: 10px;
+  fill: white;
+}
+.social:hover{
+  fill: var(--very-bright-blue);
+}
+.link{
   color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+.link:hover{
+  color: var(--very-bright-blue);
 }
