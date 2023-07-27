@@ -62,14 +62,15 @@ img.logo{
 .container-fluid{
   padding: 55px;
   margin: 0;
-  width: auto;
+  /* width: auto; */
 }
 
 /* prima sezione */
 .first-section{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "text" "image";
+  grid-template-areas: "text image";
+  grid-template-rows: 1fr;
   margin-top: 50px;
 }
 .first-section .text{
@@ -265,6 +266,7 @@ img.logo{
     text-align: center;
   }
 
+  /* menù */
   .logo{
     width: 100px;
     padding-top: 10px;
@@ -278,9 +280,9 @@ img.logo{
     margin-right: 0;
     margin-left: auto;
   }
-
+  /* prima sezione */
   .first-section{
-    grid-template-areas: "image text";
+    grid-template-areas: "image" "text";
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
@@ -288,6 +290,11 @@ img.logo{
   }
   .first-section .image{
     height: 300px;
+    width: 300px;
+    background-image: url(./images/illustration-1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-area: "image";
   }
   .first-section .text{
     padding: 0;
