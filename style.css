@@ -188,6 +188,9 @@ img.logo{
   width: fit-content;
   margin-right: auto;
   display: flex;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  fill: var(--moderate-cyan);
 }
 .external-link:hover{
   fill: var(--bright-cyan);
@@ -254,4 +257,39 @@ img.logo{
 }
 .link:hover{
   color: var(--very-bright-blue);
+}
+
+@media only screen and (max-width: 600px) {
+  .container-fluid{
+    padding: 30px;
+    text-align: center;
+  }
+
+  .logo{
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .nav-item{
+    padding: 10px;
+  }
+  .nav{
+    width: auto;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .first-section{
+    grid-template-areas: "image text";
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+  .first-section .image{
+    height: 300px;
+  }
+  .first-section .text{
+    padding: 0;
+  }
 }
